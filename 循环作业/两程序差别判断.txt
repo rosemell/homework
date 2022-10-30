@@ -1,0 +1,32 @@
+俩程序都需要输入一个值然后计算这个值累加到十的和
+但a程序使用while循环若输入值大于10则直接跳过循环最终输出值为0
+而b程序使用do while循环当输入值大于10时会先执行一遍循环再跳过循环
+会使最终输出值为输入值
+#include <stdio.h>
+int main()
+{
+	int i,sum=0;
+	printf("please i,i=?");
+	scanf("%d",&i);
+	while(i<=10) 
+	{
+		sum=sum+i;
+		i++;
+	}
+	printf("sum=%d\n",sum);
+	return 0;
+}
+b) #include <stdio.h>
+int main()
+{
+	int i,sum=0;
+	printf("please i,i=?");
+	scanf("%d",&i);
+	do 
+	{
+		sum=sum+i;
+		i++;
+	}while(i<=10);
+	printf("sum=%d\n",sum);
+	return 0;
+}
